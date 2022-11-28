@@ -39,9 +39,9 @@ export default function Weather(){
                   </div>
                 </form>
                 <div className="overview">
-                  <h1 id="city"></h1>
+                
                   <ul>
-                    <li><h1> {weatherData.city} </h1></li>
+                    <li><h1 id="city"> {weatherData.city} </h1></li>
                     <li>Last updated: {weatherData.date}</li>
                     <li>{weatherData.description}</li>
                   </ul>

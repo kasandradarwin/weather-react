@@ -1,6 +1,5 @@
 import "./App.css";
 import "./Weather.css";
-
 import Weather from "./Weather";
 
 export default function App() {
