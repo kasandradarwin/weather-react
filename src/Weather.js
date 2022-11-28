@@ -1,9 +1,16 @@
 import React from "react";
 import "./App.css";
 import "./Weather.css";
+import ReactAnimatedWeather from 'react-animated-weather';
 
 
 export default function Weather(){
+    const defaults = {
+        icon: 'CLEAR_DAY',
+        color: 'goldenrod',
+        size: 48,
+        animate: true
+      };
 
   let weatherData = {
     city: "Nanaimo", 
@@ -42,6 +49,7 @@ export default function Weather(){
                 
                   <ul>
                     <li><h1 id="city"> {weatherData.city} </h1></li>
+                    <br />
                     <li>Last updated: {weatherData.date}</li>
                     <li>{weatherData.description}</li>
                   </ul>
@@ -49,7 +57,15 @@ export default function Weather(){
                 <div className="row">
                   <div className="col-6">
                     <div className="clearfix weather-temperature">
-                      <img src={weatherData.imgUrl} alt={weatherData.description} id="icon" className="float-left"/>
+                    <ReactAnimatedWeather
+                        icon={defaults.icon}
+                        color={defaults.color}
+                        size={defaults.size}
+                        animate={defaults.animate}
+  />
+                    {/* <Icons description="CLEAR_DAY" colour="goldenrod" /> */}
+
+                      {/* <img src={weatherData.imgUrl} alt={weatherData.description} id="icon" className="float-left"/> */}
                       <div className="float-left">
                         <span className="units"><strong>{weatherData.temp}</strong
                         ></span>
@@ -70,11 +86,12 @@ export default function Weather(){
             href="https://github.com/kasandradarwin/weather-react"
             target="_blank"
             rel="noreferrer"
-            >Open-source code</a
+            >Open-source code </a
           >
-          by Kasandra D
+            by Kasandra D
         </small>
       </div>
     </div>
     <script src="src/app.js"></script>
-
+    </div>
+)}
