@@ -64,9 +64,17 @@ export default function Weather(){
                   </div>
                 </div>
                 <div className="weather-forecast" id="forecast"></div>
-              </div>
-            </div>
-          </div>
-          <script src="src/app.js"></script>
-  </div> 
-  )}
+                </div>
+        <small>
+          <a
+            href="https://github.com/kasandradarwin/weather-react"
+            target="_blank"
+            rel="noreferrer"
+            >Open-source code</a
+          >
+          by Kasandra D
+        </small>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+
