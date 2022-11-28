@@ -15,11 +15,11 @@ export default function Weather(){
   let weatherData = {
     city: "Nanaimo", 
     date: "10 Minutes Ago",
-    description: "Cloudy",
+    description: "Sunny",
     imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png",
     humidity: "20%",
-    wind: "2 kph",
-    temp: "19°C"
+    wind: "2 k/ph",
+    temp: "20°C"
   }
   return(
   <div> 
